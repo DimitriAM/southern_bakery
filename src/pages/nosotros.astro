@@ -1,0 +1,182 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Navigation from "../components/Navigation.astro";
+import Footer from "../components/Footer.astro";
+import { Heart, Award, Leaf, Users } from "lucide-react";
+---
+
+<Layout
+    title="Sobre Nosotros - Southern Bakery"
+    description="Conoce la historia y valores de Southern Bakery"
+>
+    <Navigation />
+
+    <main class="py-16 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
+        <!-- Header -->
+        <div class="text-center mb-16">
+            <h1 class="text-5xl mb-4 text-amber-900 font-bold">
+                Sobre Nosotros
+            </h1>
+            <p class="text-xl text-gray-600 max-w-2xl mx-auto">
+                Una historia de pasión, tradición y dedicación al arte de la
+                panadería.
+            </p>
+        </div>
+
+        <!-- Story Section -->
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center mb-16">
+            <div>
+                <h2 class="text-3xl mb-6 text-amber-900 font-bold">
+                    Nuestra Historia
+                </h2>
+                <p class="mb-4 text-gray-700">
+                    Southern Bakery nació en 2003 del sueño de una familia
+                    apasionada por la panadería tradicional. Comenzamos como un
+                    pequeño negocio familiar con un horno y mucho corazón.
+                </p>
+                <p class="mb-4 text-gray-700">
+                    Con más de 20 años de experiencia, hemos crecido sin perder
+                    nuestra esencia: elaborar productos de la más alta calidad
+                    utilizando recetas tradicionales y técnicas artesanales
+                    transmitidas de generación en generación.
+                </p>
+                <p class="text-gray-700">
+                    Cada día nos levantamos antes del amanecer para hornear el
+                    pan más fresco para nuestra comunidad. Para nosotros, cada
+                    hogaza, cada croissant y cada pastel es una expresión de
+                    amor y dedicación.
+                </p>
+            </div>
+            <div>
+                <img
+                    src="https://images.unsplash.com/photo-1765451490469-099b47124cdb?w=600"
+                    alt="Panadero trabajando"
+                    class="rounded-lg shadow-xl w-full"
+                    loading="lazy"
+                />
+            </div>
+        </div>
+
+        <!-- Values -->
+        <div class="mb-16">
+            <h2 class="text-3xl text-center mb-12 text-amber-900 font-bold">
+                Nuestros Valores
+            </h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div class="text-center">
+                    <div
+                        class="inline-flex items-center justify-center w-16 h-16 bg-amber-100 rounded-full mb-4"
+                    >
+                        <Heart className="text-amber-700" size={32} />
+                    </div>
+                    <h3 class="text-xl mb-2 text-amber-900 font-semibold">
+                        Pasión
+                    </h3>
+                    <p class="text-gray-600">
+                        Amamos lo que hacemos y lo demostramos en cada producto.
+                    </p>
+                </div>
+                <div class="text-center">
+                    <div
+                        class="inline-flex items-center justify-center w-16 h-16 bg-amber-100 rounded-full mb-4"
+                    >
+                        <Award className="text-amber-700" size={32} />
+                    </div>
+                    <h3 class="text-xl mb-2 text-amber-900 font-semibold">
+                        Calidad
+                    </h3>
+                    <p class="text-gray-600">
+                        Solo utilizamos los mejores ingredientes y técnicas.
+                    </p>
+                </div>
+                <div class="text-center">
+                    <div
+                        class="inline-flex items-center justify-center w-16 h-16 bg-amber-100 rounded-full mb-4"
+                    >
+                        <Leaf className="text-amber-700" size={32} />
+                    </div>
+                    <h3 class="text-xl mb-2 text-amber-900 font-semibold">
+                        Sostenibilidad
+                    </h3>
+                    <p class="text-gray-600">
+                        Comprometidos con el medio ambiente y productos locales.
+                    </p>
+                </div>
+                <div class="text-center">
+                    <div
+                        class="inline-flex items-center justify-center w-16 h-16 bg-amber-100 rounded-full mb-4"
+                    >
+                        <Users className="text-amber-700" size={32} />
+                    </div>
+                    <h3 class="text-xl mb-2 text-amber-900 font-semibold">
+                        Comunidad
+                    </h3>
+                    <p class="text-gray-600">
+                        Somos parte activa de nuestra comunidad local.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Team Section -->
+        <div class="bg-amber-50 rounded-lg p-8 md:p-12">
+            <h2 class="text-3xl text-center mb-12 text-amber-900 font-bold">
+                Nuestro Equipo
+            </h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="text-center">
+                    <img
+                        src="https://images.unsplash.com/photo-1759521296047-89338c8e083d?w=300"
+                        alt="Carlos Méndez"
+                        class="w-32 h-32 rounded-full mx-auto mb-4 object-cover"
+                        loading="lazy"
+                    />
+                    <h3 class="text-xl mb-1 text-amber-900 font-semibold">
+                        Carlos Méndez
+                    </h3>
+                    <p class="text-amber-700 mb-2 font-medium">
+                        Maestro Pastelero
+                    </p>
+                    <p class="text-gray-600">
+                        Con más de 20 años de experiencia, Carlos lidera nuestro
+                        equipo de pastelería artesanal.
+                    </p>
+                </div>
+                <div class="text-center">
+                    <img
+                        src="https://images.unsplash.com/photo-1653552900145-5679d740bbb6?w=300"
+                        alt="María González"
+                        class="w-32 h-32 rounded-full mx-auto mb-4 object-cover"
+                        loading="lazy"
+                    />
+                    <h3 class="text-xl mb-1 text-amber-900 font-semibold">
+                        María González
+                    </h3>
+                    <p class="text-amber-700 mb-2 font-medium">Pastelera</p>
+                    <p class="text-gray-600">
+                        María elabora nuestras deliciosas tortas y dulces con
+                        dedicación y creatividad.
+                    </p>
+                </div>
+                <div class="text-center">
+                    <img
+                        src="https://images.unsplash.com/photo-1684132052745-23cd410ecd31?w=300"
+                        alt="Ana Rodríguez"
+                        class="w-32 h-32 rounded-full mx-auto mb-4 object-cover"
+                        loading="lazy"
+                    />
+                    <h3 class="text-xl mb-1 text-amber-900 font-semibold">
+                        Ana Rodríguez
+                    </h3>
+                    <p class="text-amber-700 mb-2 font-medium">Pastelera</p>
+                    <p class="text-gray-600">
+                        Ana especialista en decoración de pasteles y creaciones
+                        personalizadas únicas.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <Footer />
+</Layout>
