@@ -13,5 +13,18 @@ export default defineConfig({
   output: 'static',
   build: {
     inlineStylesheets: 'auto',
+    assets: '_astro',
+  },
+  compressHTML: true,
+  vite: {
+    build: {
+      cssCodeSplit: true,
+      minify: 'terser',
+      terserOptions: {
+        compress: {
+          drop_console: true,
+        },
+      },
+    },
   },
 });
