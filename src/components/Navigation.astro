@@ -85,11 +85,12 @@
 </nav>
 
 <script>
-    // Minimal client-side JS for mobile menu toggle
-    const menuButton = document.getElementById("mobile-menu-button");
-    const mobileMenu = document.getElementById("mobile-menu");
+    document.addEventListener("astro:page-load", () => {
+        const menuButton = document.getElementById("mobile-menu-button");
+        const mobileMenu = document.getElementById("mobile-menu");
 
-    menuButton?.addEventListener("click", () => {
-        mobileMenu?.classList.toggle("hidden");
+        menuButton?.addEventListener("click", () => {
+            mobileMenu?.classList.toggle("hidden");
+        });
     });
 </script>

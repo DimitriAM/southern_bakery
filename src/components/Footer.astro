@@ -1,32 +1,50 @@
 ---
-import { Facebook, Instagram, MessageCircle } from "lucide-react";
+import { Facebook, Instagram, MessageCircle, Send } from "lucide-react";
 ---
 
-<footer class="bg-amber-900 text-amber-50 py-8">
+<footer class="bg-amber-900 text-amber-50 py-12">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div
-            class="flex flex-col md:flex-row justify-between items-center gap-4"
+            class="flex flex-col md:flex-row justify-between items-center gap-8"
         >
-            <!-- Social Media Links -->
-            <div class="flex items-center gap-4">
+            <!-- Left Side: Logo & Socials -->
+            <div class="flex flex-col items-center md:items-start gap-4">
                 <a
-                    href="https://facebook.com"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    class="hover:text-amber-300 transition-colors"
-                    aria-label="Facebook"
+                    href="/"
+                    class="text-2xl font-bold hover:text-amber-300 transition-colors"
                 >
-                    <Facebook size={24} />
+                    Southern Bakery
                 </a>
-                <a
-                    href="https://instagram.com"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    class="hover:text-amber-300 transition-colors"
-                    aria-label="Instagram"
-                >
-                    <Instagram size={24} />
-                </a>
+
+                <div class="flex items-center gap-4">
+                    <a
+                        href="https://facebook.com"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="hover:text-amber-300 transition-colors"
+                        aria-label="Facebook"
+                    >
+                        <Facebook size={24} />
+                    </a>
+                    <a
+                        href="https://instagram.com"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="hover:text-amber-300 transition-colors"
+                        aria-label="Instagram"
+                    >
+                        <Instagram size={24} />
+                    </a>
+                    <a
+                        href="https://telegram.org"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="hover:text-amber-300 transition-colors"
+                        aria-label="Telegram"
+                    >
+                        <Send size={24} />
+                    </a>
+                </div>
             </div>
 
             <!-- Copyright -->
